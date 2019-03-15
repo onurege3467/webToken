@@ -1,0 +1,78 @@
+{
+  "name": "@onurege3467/webtoken",
+  "version": "1.0.0",
+  "description": "High-performance, secure, and type-safe alternative to JWT with encrypted payloads",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "proto"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "benchmark": "tsx benchmarks/index.ts",
+    "lint": "eslint src tests --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "jwt",
+    "token",
+    "authentication",
+    "security",
+    "encryption",
+    "aes-gcm",
+    "ed25519",
+    "typescript",
+    "paseto",
+    "webtoken"
+  ],
+  "author": "Onur Ege <onurege3467@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "benchmark": "^2.1.4",
+    "eslint": "^8.56.0",
+    "jsonwebtoken": "^9.0.2",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
+  },
+  "optionalDependencies": {
+    "protobufjs": "^7.2.6"
+  },
+  "peerDependenciesMeta": {
+    "protobufjs": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@types/ioredis": "^4.28.10",
+    "better-sqlite3": "^12.6.2",
+    "ioredis": "^5.9.2"
+  }
+}
