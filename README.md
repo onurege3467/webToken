@@ -1,3 +1,11 @@
+> **📝 Proje Hakkında / About This Project**
+> 
+> Bu proje, başlangıçta kapalı kaynak (closed-source) ve özel ticari kullanım için üretilmiş olup, daha sonra açık kaynak (open-source) olarak toplulukla paylaşılmıştır. 6 yılı aşkın bir geliştirme sürecinin ardından, genel kullanıma sunulmuştur.
+>
+> This project was originally developed for closed-source commercial and private use, and was later converted to open-source to be shared with the community. After more than 6 years of development, it has been released for public use.
+
+---
+
 # @onurege3467/webtoken
 
 High-performance, secure, and type-safe alternative to JWT with encrypted payloads.
